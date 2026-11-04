@@ -1,3 +1,13 @@
+expenses = []
+expense = {
+    "description": "Rice",
+    "amount": 5000
+}
+
+expenses.append(expense)
+print(expense)
+
+
 while True:
     print("==== EXPENSE TRACKER ====")
     print("\n1. Add Expense")
@@ -8,7 +18,8 @@ while True:
     choice = input("Choose an option: ")
 
     if choice == "1":
-        print("Add Expense selected")
+        description = input("Enter expense description: ")
+        amount = float(input("Enter expense amount: "))
 
     elif choice == "2":
         print("View Expenses selected")
