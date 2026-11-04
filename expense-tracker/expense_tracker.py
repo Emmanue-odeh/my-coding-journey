@@ -20,9 +20,16 @@ while True:
     if choice == "1":
         description = input("Enter expense description: ")
         amount = float(input("Enter expense amount: "))
+        expense = {
+            "description": description,
+            "amount": amount
+        }
+        expenses.append(expense)
+        print("Expense added successfully!")
 
     elif choice == "2":
-        print("View Expenses selected")
+        for expense in expenses:
+          print(expense)
 
     elif choice == "3":
         print("Show Total selected")
