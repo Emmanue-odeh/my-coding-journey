@@ -24,3 +24,19 @@ choice = input("Choose an option (1-5): ")
 
 if choice == "1":
     print("Let's help you manage your money!")
+
+elif choice == "2":
+    print("Let's improve your learning!")
+
+elif choice == "3":
+    print("Let's organize your time!")
+
+elif choice == "4":
+    print("Let's troubleshoot your technology problem!")
+
+elif choice == "5":
+    print("Let's improve your productivity!")
+
+else:
+    print("Invalid choice. Please select an option from 1 to 5.")
+
