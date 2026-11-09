@@ -40,3 +40,7 @@ elif choice == "5":
 else:
     print("Invalid choice. Please select an option from 1 to 5.")
 
+
+    income = float(input("Enter your monthly income (₦): "))
+
+    print(f"Your monthly income is ₦{income:,.2f}")
