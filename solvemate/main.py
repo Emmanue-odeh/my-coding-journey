@@ -40,7 +40,37 @@ elif choice == "5":
 else:
     print("Invalid choice. Please select an option from 1 to 5.")
 
-
+try:
     income = float(input("Enter your monthly income (₦): "))
+except ValueError:
+    print("Please enter a valid number.")
 
-    print(f"Your monthly income is ₦{income:,.2f}")
+    
+print(f"Your monthly income is ₦{income:,.2f}")
+
+
+food = float(input("How much do you spend on food monthly? ₦"))
+
+transport = float(input("How much do you spend on transportation monthly? ₦"))
+
+electricity = float(input("How much do you spend on electricity monthly? ₦"))
+
+internet = float(input("How much do you spend on internet monthly? ₦"))
+
+total_expenses = food + transport + electricity + internet
+
+print(f"Your total monthly expenses are: ₦{total_expenses:,.2f}")
+
+remaining_balance = income - total_expenses
+
+print(f"Your remaining balance is: ₦{remaining_balance:,.2f}")
+
+
+if remaining_balance > 0:
+    print("Great! You have money left. Consider saving some of it.")
+
+elif remaining_balance == 0:
+    print("You have spent all your monthly income.")
+
+else:
+    print("Warning! Your expenses are higher than your income.")
